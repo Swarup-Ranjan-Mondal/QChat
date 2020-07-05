@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(white, rgb(5, 160, 147));
+    height: 100vh;
+}
+
+.navbar{
+    background: hsl(120, 42%, 53%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(32, 6, 6);
+}
+
+img{
+    width: 6vmin;
+    height: 6vmin;
+    filter: invert(90%);
+}
+
+.navbar h1{
+    color: rgb(87, 6, 69);
+    padding: 0 5px;
+}
+
+.message-container{
+    height: 80vmin;
+    width: 100vmin;
+    margin: 2vh auto;
+    padding: 1.5vmin 5vmin;
+    border-radius: 5vmin;
+    border: 2px solid rgb(63, 21, 1);
+    overflow-y: auto;
+}
+
+.message{
+    width: max-content;
+    max-width: 30%;
+    padding: 3.5vmin 2vmin 2.7vmin 2vmin;
+    margin: 3vmin 1vmin;
+    background: grey;
+    border-radius: 2vmin;
+    position: relative;
+}
+
+.left{
+    float: left;
+    clear: both;
+    min-width: 15%; 
+    border-bottom-left-radius: 0;
+}
+
+.middle{
+    clear: both;
+    padding: 1vmin 2vmin;
+    font-size: 0.9em;
+    margin: 3vmin auto;
+    text-align: center;
+}
+
+.right{
+    float: right;
+    clear: both;
+    min-width: 15%; 
+    border-bottom-right-radius: 0;
+}
+
+.message::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    border-bottom: 2vmin solid grey;
+}
+
+.left::before{
+    left: 0;
+    transform: translateX(-100%);
+    border-left: 2vmin solid transparent;
+}
+
+.right::before{
+    right: 0;
+    transform: translateX(100%);
+    border-right: 2vmin solid transparent;
+}
+
+.sender-name{
+    position: absolute;
+    top: 0.8vmin;
+    left: 2vmin;
+    font-size: 0.85rem;
+    font-weight: 1000;
+}
+
+.date{
+    position: absolute;
+    bottom: 0.5vmin;
+    right: 2.5vmin;
+    font-size: 0.66rem;
+    font-weight: 540;
+}
+
+.input-container{
+    text-align: center;
+}
+
+#input-text{
+    width: 70vmin;
+    height: 5vmin;
+    font-size: 1em;
+    border-radius: 2vmin;
+    outline: none;
+    border: 1px solid black;
+    padding: 0 15px;
+}
+
+.btn{
+    height: 5vmin;
+    padding: 0 3vmin;
+    font-size: 1em;
+    outline: none;
+    border-radius: 2vmin;
+    border-width: 1.5px;
+    cursor: pointer;
+}
