@@ -24,7 +24,7 @@ body {
 img {
   width: 18vmin;
   height: 18vmin;
-  margin-right: 1.2vmin;
+  margin: 1.4vmin 2.6vmin 1.4vmin 1.4vmin;
 }
 
 .navbar h1 {
@@ -43,7 +43,7 @@ img {
   position: absolute;
   left: 50%;
   top: 9vmin;
-  width: 60%;
+  width: 56%;
   height: 80%;
   border-radius: 8px;
   background: #def0f2e6;
