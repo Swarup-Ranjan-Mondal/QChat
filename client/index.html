@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q-Chat</title>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QChat</title>
+    <link rel="stylesheet" href="css/style.css" />
     <script src="http://localhost:3000/socket.io/socket.io.js" defer></script>
     <script src="js/client.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <img src="./img/chat.png" alt="Logo">
-        <h1>Q-Chat</h1>
+      <img src="./img/chat.png" alt="Logo" />
     </nav>
-    <div class="message-container"></div>
-    <form action="#" class="input-container">
-        <input type="text" name="input-text" id="input-text">
+    <div class="overlay-bg"></div>
+    <div class="chat-container">
+      <header>
+        <h1>Welcome to QChat</h1>
+      </header>
+      <div class="message-container"></div>
+      <form action="#" class="input-container">
+        <input
+          type="text"
+          id="input-text"
+          name="input-text"
+          placeholder="Type your message here..."
+        />
         <button class="btn" type="submit">Send</button>
-    </form>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
