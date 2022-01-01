@@ -20,7 +20,7 @@ form.addEventListener("submit", (e) => {
 });
 
 socket.on("user-joined", (name) => {
-  const message = `${name} joined the Chat`;
+  const message = `${name} joined the chat`;
   appendMessage(message, "middle");
 });
 
@@ -62,4 +62,5 @@ function appendMessage(message, position) {
   messageElement.classList.add("message");
   messageElement.classList.add(position);
   messageContainer.appendChild(messageElement);
+  messageContainer.scrollTop = messageContainer.scrollHeight;
 }

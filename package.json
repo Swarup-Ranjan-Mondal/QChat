@@ -4,11 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon ./server/server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Swarup Ranjan Mondal",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
   }
 }
